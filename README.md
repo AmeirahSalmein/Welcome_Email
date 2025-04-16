@@ -1,83 +1,187 @@
-# Welcome to the Computing Department
-### Practical Application
-In addition to the provided reading list you were sent, the various videos and weblinks below are to introduce you to the basics of the programming languages to be used during your course.   If you are comfortable with them, some of the links may not be suitable for you and advanced study links have been provided, where applicable.  Transcripts are available on all the video sites.  
+<h1>End of Module Assignment<h1/>
 
-You will not need to download the various software for the programmes (unless you already have them).  This is because you will be using an online Integrated Development Environment (IDE), **Codio**, for all the programming languages used during your course. Where applicable, an online platform is linked for you to use for your practice here.  
+<h2>Introduction<h2/>
 
-Please read more about Codio from their **[website](https://docs.codio.com/students/)**. You will have access to Codio during your first module. 
+<h4>Built according to Unit 9's recommendations, this project employs a Python-based security solution for a local grocery store's Online Shopping System (OSS). The basic security issue resolved here is user authentication and access control, noted as a potential OSS vulnerability due to hazards including spoofing, unlawful data access, and privilege escalation.
 
-#### GitHub - Used in all courses for team projects, collaborative coding and your e-portfolio.  
-You will need to create a GitHub account once you complete your course registration.  if you have one already, please ensure you use separate repositories for your studies.  You can upgrade your account with a student pack by applying [via this link](https://education.github.com/students) and help guide is [also available](https://help.github.com/en/github/teaching-and-learning-with-github-education/applying-for-a-student-developer-pack).  
-We encourage you to learn more about this popular platform using their training - [First Day on GitHub](https://lab.github.com/githubtraining/first-day-on-github) and [First Week on GitHub](https://lab.github.com/githubtraining/first-week-on-github).  You can also review a shortened [guide](https://guides.github.com/activities/hello-world/) and the [GitHub YouTube channel](https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw).  The [GitHub Learning Lab](https://www.youtube.com/watch?v=9S0p8YMQzsM&feature=youtu.be) is a great place to start getting some practice, as well as [Microsoft's Learning Labs](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/)
-
-#### Python (Used in most courses, including object-oriented programming)
-https://www.learnpython.org/ - Beginners, focus on “Learn the Basics” and “Data Science Tutorials”.  
-To practice, please use the [Python shell](https://www.python.org/shell/) or https://codingbat.com/python.  
-Another site for good practice, especially for beginners, is the [Python eBook project](https://runestone.academy/runestone/books/published/fopp/index.html).  
-Finally, for a whistle-stop tour why not take a look at [Kaggle's Python training](https://www.kaggle.com/learn/python) which also provides certificates of completion.
-
-#### SQL (Used in modules involving databases)
-https://www.khanacademy.org/computing/computer-programming/sql.  Please note that Khan Academy is a good site for practicing. 
-
-#### Java (Also helps you understand object-oriented programming)
-https://www.oracle.com/technetwork/java/javase/java-tutorial-downloads-2005894.html  
-An online practice space - https://codingbat.com/java
-
-#### R (Sometimes used in tandem with Python, especially for Mathematical programming)
-https://swcarpentry.github.io/r-novice-gapminder/  
-For advanced programmers needing to understand R, take a look at [“Advanced R”](https://adv-r.hadley.nz/) or [“R for Data Science”](https://r4ds.had.co.nz/), both by Hadley Wickham.
-
-#### C/C++ (Used in specialist/advanced object-oriented programming modules)
-https://www.learn-c.org/ and https://www.learn-cpp.org/ cater to both beginners and advaced programmers.  Take a look at 
-https://www.cprogramming.com/ as well for more practice.  
-Advanced programmers, take a look at http://www.icce.rug.nl/documents/cplusplus/.  
-
-For all these programming languages and many others, take a look at https://www.w3schools.com/ for some more information and practice.  
-
-#### Data Science and Artificial Intelligence training
-Take a look at the short courses offered by [Kaggle](https://www.kaggle.com/learn), many of which are included in both programmes. This will be a great introduction to each module and your programme as a whole. To be sure of which ones to complete, compare them your programme's module titles.  Don't forget to pick up your certificates of completion when you complete each one.
-
-**You may find it helpful to keep referring to these resources throughout your course.  A link to this page will also be made available on your induction module on the learning platform.**
-
-##
-### Key Computer Science Concepts
-Below are notes to help you review some key Computer Science concepts before you start your programme. 
-
-* #### Computing Fundamentals
-https://www.khanacademy.org/computing/computer-science. The Khan Academy website is great for learning fundamentals on any subject and this part of the site introduces various aspects of computer science, starting with algorithms.  
-https://introcomputing.org/ This site from Stanford University's Introductory Course descibes the nature of computers and also provides a platform fo you to practice.  
-https://composingprograms.com/  This site offers more text on covering the fundamental aspects of programming and computer science.  
+This solution develops a scalable and safe system for managing users in many roles: customers, managers, and administrators using Object-Oriented Programming (OOP) concepts. The system ensures that every role only use permitted skills, therefore improving the integrity and secrecy of the OSS.<h4/>
 
 
-* #### Style Guides
-There is a need to be consistent in the style you use when writing code.  The consistent style ensures that your code is:
-   -	Understandable
-   -	Amendable
-   -	Reusable
-   -	Sustainable
+Describe of the solution:
 
-Group/team work is a key aspect of a computer science practitioner’s everyday work life.  So, it is essential to ensure you have a consistent style, whichever coding language you use.  During the course, this will help to ensure your group can collaborate efficiently on projects.  It will also ensure that your work can be assessed correctly by your peers and tutors.  
+2. Explanation of the Solution
+Built in Python, this solution shows the safe management of user credentials together with the application of Role-Based Access Control (RBAC). Essential components consist:
 
-Most organisations have their own guides for the various programming languages used in a project.  One commonly used source for Python is [PEP8](https://www.python.org/dev/peps/pep-0008/).  However, if you are a beginner, this might be a difficult document to read.  A simplified version can be found [here](https://tandysony.com/2018/02/14/pep-8.html) and on this [site](https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code).  
+Three subclasses—Customer, Manager, and Admin—along with a basic User class form the software. This offers role-specific capability and shows OOP inheritance.
 
-For SQL, [SQL style guide](https://www.sqlstyle.guide/) by Simon Holywell is widely used.  Finally, for R, [tiddyverse](https://style.tidyverse.org/) is a popular style guide, which is based on the [Google Style Guides](http://google.github.io/styleguide/).   If you would like to review the Google Style Guides for the coding languages discussed, you can start by focusing on sections covering:
--	Indentation
--	Maximum line length
--	Line spacing
--	Imports
--	Whitespace
--	Naming Conventions
--	Comments
--	Quotes
--	Compound Statements
+Password security using bcrypt is a strong cryptographic hash method used in the bcrypt library. Hashing guards against data breaches by keeping passwords from being kept in plaintext un encrypted.
 
-These are areas where mistakes commonly occur, making it difficult for team members to follow your code or creates issues with adaptation (even for you!) later down the line.
+Every user role can only act in line with their privileges:
 
-* #### Debugging 
-A dreaded process by most computer programmers but highly essential to your work.  It refers to the process of interpreting and diagnosing the cause of errors in your programme.  John DeNero descibes the process of debugging quite succinctly on his [website](https://composingprograms.com/pages/11-getting-started.html#errors).  
+Customers can peruse products.
 
-##
-### Finally,
-Please remember that your tutor is on hand to help you with your programming queries.  You can also learn a lot from other students as you all bring to the course varying expertise from diverse educational and professional backgrounds.
+Managers can change the inventory.
 
-Welcome again to the University of Essex Online Computing Department.  We look forward to working with you all.
+Administrators can handle user accounts.
+
+Registered users are kept in a dictionary simulating a user database. Simplified as it is, this can be developed into a database system for production use.
+
+Passwords entered during login are matched against hashed values using bcrypt.checkpw(), therefore guaranteeing strong and safe authentication.
+
+Strengths of this answer:
+
+shows fundamental OOP ideas in the framework of security.
+
+There is never unencrypted storage for passwords.
+
+Scalable role structure.
+
+Simple for including into more complex systems.
+
+helps reduce STRIDE hazards (such as Spoofing, Elevation of Privilege).
+
+Strengths:
+
+Does not have consistent data storage—no real database.
+
+Ignores account lockout systems or session handling.
+
+Only CLI-based; not yet web or GUI.
+
+Though basic, this solution shows sound programming techniques and basic cybersecurity protections and provides a safe basis to grow on.
+
+
+3. Instructions to Execute
+Prerequisites
+•	Python 3.9+ installed
+•	bcrypt library installed
+To install bcrypt, run:
+bash
+CopyEdit
+pip install bcrypt
+To Run the Program
+1.	Open your terminal 
+2.	Navigate to the directory containing the user_system.py file.
+3.	Run the Python file using:
+bash
+CopyEdit
+python user_system.py
+ Output
+Upon execution, you’ll see:
+•	Users being registered with different roles.
+•	Login attempts with both valid and invalid credentials.
+•	Role-specific actions being executed, such as:
+o	browse_items() for customers
+o	update_inventory() for managers
+o	manage_users() for admins
+the code:
+import bcrypt
+
+# Base User class
+class User:
+    def __init__(self, username, password):
+        self.username = username
+        self.hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
+    def check_password(self, password):
+        return bcrypt.checkpw(password.encode('utf-8'), self.hashed_password)
+
+# Subclasses with role-specific actions
+class Customer(User):
+    def browse_items(self):
+        print(f"{self.username} is browsing items.")
+
+class Manager(User):
+    def update_inventory(self):
+        print(f"{self.username} is updating inventory.")
+
+class Admin(User):
+    def manage_users(self):
+        print(f"{self.username} is managing user accounts.")
+
+# Simulated user database (in-memory)
+user_db = {}
+
+# Function to register a user
+def register_user(username, password, role):
+    if username in user_db:
+        print("Username already exists.")
+        return None
+
+    if role == "customer":
+        user = Customer(username, password)
+    elif role == "manager":
+        user = Manager(username, password)
+    elif role == "admin":
+        user = Admin(username, password)
+    else:
+        print("Invalid role.")
+        return None
+
+    user_db[username] = user
+    print(f"{role.capitalize()} '{username}' registered successfully.")
+    return user
+
+# Function to log in a user
+def login(username, password):
+    user = user_db.get(username)
+    if user and user.check_password(password):
+        print(f"Login successful. Welcome, {username}!")
+        return user
+    else:
+        print("Login failed. Invalid credentials.")
+        return None
+
+# ----------------- DEMO ------------------
+
+# Register users
+register_user("alice", "password123", "customer")
+register_user("bob", "securepass", "manager")
+register_user("carol", "adminpass", "admin")
+
+print("\n--- LOGIN ATTEMPTS ---")
+
+# Successful login
+user1 = login("alice", "password123")
+if isinstance(user1, Customer):
+    user1.browse_items()
+
+# Incorrect password
+user2 = login("bob", "wrongpass")
+
+# Manager login and action
+user3 = login("bob", "securepass")
+if isinstance(user3, Manager):
+    user3.update_inventory()
+
+# Admin login and action
+user4 = login("carol", "adminpass")
+if isinstance(user4, Admin):
+    user4.manage_users()
+
+
+The outcome: 
+Customer 'alice' registered successfully.
+Manager 'bob' registered successfully.
+Admin 'carol' registered successfully.
+
+--- LOGIN ATTEMPTS ---
+Login successful. Welcome, alice!
+alice is browsing items.
+Login failed. Invalid credentials.
+Login successful. Welcome, bob!
+bob is updating inventory.
+Login successful. Welcome, carol!
+carol is managing user accounts.
+Login attempts:
+•	 alice (Customer) logged in and could browse items.
+•	bob had a failed login attempt with the wrong password (as expected).
+•	bob then logged in successfully and could update inventory.
+•	carol (Admin) logged in and managed user accounts.
+
+
+
+<h2>Conclusion<h2/>
+<h4>This Python application demonstrates how well OOP design can be implemented to lower real cybersecurity risks in internet networks. It addresses critical STRIDE issues since it guarantees users are vetted and allowed depending on their responsibilities. By means of password hash, role-based access, and contained class structures, this approach enhances OSS security and offers a practical building block for more demanding systems.
+
+Including a database (e.g., SQLite), GUI/web interface, MFA support, and session management for even more strong security could help next generations of the system. Still, it achieves its primary goal: offer a Python OOP-based, maintainable, expandable, secure, authentication system.<h4/>
